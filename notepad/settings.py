@@ -37,8 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'stickynote'
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+    'robots',
+    'stickynote',
 ]
+
+SITE_ID = 2
+
+ROBOTS_USE_SITEMAP = False
+ROBOTS_USE_HOST = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
